@@ -2207,7 +2207,7 @@ input:checked ~ .form-consent__icon::after {
   }
   .password-popup {
     width: 586px;
-    top: 25%;
+    top: 15%;
     left: 40%;
   }
   .form-call__title,
