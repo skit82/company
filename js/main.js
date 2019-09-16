@@ -77,7 +77,7 @@ $(document).ready(function() {
         }
     });
 
-     $('.password').click(function() {
+    $('.password').click(function() {
         $('.password-fade').fadeIn();
         return false;
     });    
@@ -96,6 +96,29 @@ $(document).ready(function() {
     
     $('.password-fade').click(function(e) {
         if ($(e.target).closest('.password-popup').length == 0) {
+            $(this).fadeOut();                    
+        }
+    });
+
+    $('.blank').click(function() {
+        $('.blank-fade').fadeIn();
+        return false;
+    });    
+    
+    $('.popup-close').click(function() {
+        $(this).parents('.blank-fade').fadeOut();
+        return false;
+    });        
+
+    $(document).keydown(function(e) {
+        if (e.keyCode === 27) {
+            e.stopPropagation();
+            $('.blank-fade').fadeOut();
+        }
+    });
+    
+    $('.blank-fade').click(function(e) {
+        if ($(e.target).closest('.popup-blank').length == 0) {
             $(this).fadeOut();                    
         }
     });
