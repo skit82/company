@@ -878,6 +878,7 @@ body {
   }
 }
 .page-footer {
+  width: 100%;
   background-color: rgb(28, 28, 28);
 }
 .page-footer__wrapper {
