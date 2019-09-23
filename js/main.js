@@ -123,6 +123,14 @@ $(document).ready(function() {
         }
     });
 
+    $('.information__board-btn').on('click', function() {
+        $('.information__invisible').slideToggle(1200, function(){
+          if($(this).css('display') === 'none'){
+          $(this).removeAttr('style')
+          };
+      });
+    })
+
     $('.filter-img').on('click', function() {
         $('.filter-container__wrraper').slideToggle(100, function() {
           if($(this).css('display') === 'none'){

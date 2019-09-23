@@ -18,7 +18,7 @@
 						<p class="mob-menu__header-text">
 							Меню
 						</p>
-						<a href="" class="mob-menu__header-link">
+						<a href="" class="mob-menu__header-link blank">
 							+7 (812) 649-75-34
 						</a>
 					</div>
@@ -61,7 +61,7 @@
 								сб-вс 10:00-20:00
 							</p>
 						</div>
-						<a href="" class="mob-menu__footer-ref">
+						<a href="personal-cabinet.html" class="mob-menu__footer-ref">
 							Личный кабинет
 						</a>
 					</div>
@@ -96,13 +96,13 @@
 					</ul>
 				</menu>
 				<div class="page-header__buttom">
-					<a href="" class="page-header__buttom-link">
+					<a href="personal-cabinet.html" class="page-header__buttom-link">
 						Личный кабинет
 					</a>
 				</div>
 				<div class="page-header__contact">
 					<div class="page-header__contact-descr">
-						<a href="" class="page-header__contact-tel">
+						<a href="" class="page-header__contact-tel blank">
 							+7 (812) 649-75-34
 						</a>
 						<div class="page-header__contact-box">
@@ -591,6 +591,55 @@
         <p class="form-expert__text">
         	Вам перезвонят в течение 2х минут
         </p>
+      </form>
+    </div>        
+	</div>
+	<div class="blank-fade">
+    <div class="popup-blank">
+      <a class="popup-close" href="#">
+        <img src="img/icon-close.png" width="17" height="17" alt="Закрыть">
+      </a>
+      <form action="" class="form-blank">
+        <h2 class="form-blank__title">
+        	Обращение в УК
+        </h2>
+        <div class="form-blank__box">
+        	<label>
+		      	<input class="form-blank__street" type="text" name="name" placeholder="Улица">
+		    	</label>
+		    	<label>
+		      	<input class="form-blank__house" type="text" name="name" placeholder="Дом">
+		    	</label>
+        </div>
+        <div class="form-blank__box">
+        	<label>
+		      	<input class="form-blank__housing" type="text" name="name" placeholder="Корппус">
+		    	</label>
+		    	<label>
+		      	<input class="form-blank__room" type="text" name="name" placeholder="Квартира">
+		    	</label>
+        </div>
+        <label>
+		      <input class="form-blank__input" type="text" name="name" placeholder="ФИО">
+		    </label>
+        <label>
+        	<input class="form-blank__input" type="tel" name="tel" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}" placeholder="Номер телефона">
+        </label>
+        <div class="form-blank__select form-blank__select--icon">
+			    <select name="select">
+			       <option selected="selected">Тема обращения</option>
+								<option>Первый</option>
+									<option>Второй</option>
+									<option>Третий</option>
+									<option>Четвертый</option>
+		      </select>
+				</div>
+				<label>
+	        <textarea class="form-blank__textarea" name="name" placeholder="Текст обращения"></textarea>
+	      </label>
+        <button class="form-blank__cancel">
+        	Отправить
+        </button>
       </form>
     </div>        
 	</div>
