@@ -65,16 +65,6 @@ body {
   height: 100%;
 }
 body {
-  /*display: -webkit-flex;*/
-  /*display: -moz-flex;*/
-  /*display: -ms-flex;*/
-  /*display: -o-flex;*/
-  /*display: flex;*/
-  /*-webkit-flex-direction: column;*/
-  /*-moz-flex-direction: column;*/
-  /*-ms-flex-direction: column;*/
-  /*-o-flex-direction: column;*/
-  /*flex-direction: column;*/
 	padding: 0px;
 	margin: 0px;
 	font-family: "TTNorms", "Arial", sans-serif;
@@ -83,7 +73,18 @@ body {
   color: #1c1a1b;
 	background-color: rgb(248, 251, 255);
 }
-
+.scroll-body {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  -o-flex-direction: column;
+  flex-direction: column;
+}
 .page-header {
   
 }
@@ -3018,7 +3019,7 @@ input:checked ~ .cabinet-form__icon::after {
 }
 .personal-info__picture {
   width: 320px;
-  height: 250px;
+  height: 260px;
   margin: 0px auto;
   margin-top: 5px;
   margin-bottom: 30px;
@@ -3029,7 +3030,7 @@ input:checked ~ .cabinet-form__icon::after {
   width: 283px;
   height: 250px;
   margin: auto;
-  padding-top: 34px;
+  margin-top: 10px;
 }
 .personal-info__client {
   max-width: 420px;
@@ -4347,10 +4348,10 @@ input:checked ~ .cabinet-form__icon::after {
   padding: 0 10px;
 }
 .main {
-  display: flex;
-  flex-direction: column;
+  /*display: flex;*/
+  /*flex-direction: column;*/
   flex: 1 0 auto;
-  height: 100%;
+  /*height: 100%;*/
 }
 .technical__title {
   display: flex;
