@@ -3449,6 +3449,7 @@ input:checked ~ .cabinet-form__icon::after {
 }
 .personal__menu {
   order: 2;
+  display: none;
 }
 .personal-page__write-gamburger {
   position: relative;
@@ -3458,6 +3459,7 @@ input:checked ~ .cabinet-form__icon::after {
   font-size: 14px;
   font-weight: 400;
   color: #1c1a1b;
+  cursor: pointer;
   text-transform: uppercase;
 }
 .personal-page__write-gamburger::after {
@@ -3479,6 +3481,9 @@ input:checked ~ .cabinet-form__icon::after {
   }
 }
 @media (min-width: 1200px) {
+  .personal__menu {
+    display: block;
+  }
   .personal-page__write {
     width: 140px;
   }

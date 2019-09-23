@@ -8,6 +8,14 @@ $(document).ready(function() {
       });
     })
 
+    $('.personal-page__write-gamburger').on('click', function() {
+        $('.personal__menu').slideToggle(100, function(){
+          if($(this).css('display') === 'none'){
+          $(this).removeAttr('style')
+          };
+      });
+    })
+
     $('.call').click(function() {
         $('.popup-fade').fadeIn();
         return false;
