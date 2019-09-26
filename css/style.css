@@ -2929,6 +2929,23 @@ input:checked ~ .cabinet-form__icon::after {
   font-family: inherit;
   font-weight: 300;
 }
+.register-form__house {
+  display: block;
+  padding: 10px 20px;
+  margin-bottom: 10px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgba(46, 51, 71, 0.3);
+  border-radius: 5px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 5px 21px 0px rgba(1,1,1, 0.1);
+  width: 300px;
+  height: 74px;
+  font-size: 18px;
+  line-height: 24px;
+  font-family: inherit;
+  font-weight: 300;
+}
 .register-form__submit {
   display: block;
   width: 300px;
@@ -2967,6 +2984,18 @@ input:checked ~ .cabinet-form__icon::after {
 @media (min-width: 767px) {
   .register-form {
     width: 577px;
+  }
+  .register-form__block {
+    width: 282px;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: space-between;
+  }
+  .register-form__house {
+    width: 136px;
   }
   .register__wrapper {
     padding: 0px 40px;
