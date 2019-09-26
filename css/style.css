@@ -3471,16 +3471,16 @@ input:checked ~ .cabinet-form__icon::after {
   display: block;
   width: 45px;
   height: 45px;
-  margin-left: auto;
+  /*margin-left: auto;*/
   border-radius: 100px;
   background-color: rgb(248, 251, 255);
 }
 .personal-page__user-img {
   display: block;
-  width: 34px;
-  height: 30px;
+  width: 39px;
+  height: 40px;
   margin: 0px auto;
-  margin-top: 5px;
+  margin-top: 4px;
 }
 .personal-page__user-box {
   display: -webkit-flex;
@@ -3582,6 +3582,9 @@ input:checked ~ .cabinet-form__icon::after {
   }
   .personal-page__user-inner {
     width: 280px;
+  }
+  .personal-page__user-picture {
+    margin-left: 0px;
   }
   .personal-page__user {
     width: 280px;
