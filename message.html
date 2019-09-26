@@ -3,6 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/jquery-ui.css">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Две столицы</title>
 </head>
@@ -97,17 +98,18 @@
 			</p>
 			<div class="message__filter">
 				<div class="message__filter-item">
-					<div class="message__filter-yauer">
-						<select name="select">
-							<option selected="selected">
-								Январь
-							</option>
-							<option>1</option>
-							<option>2</option>
-							<option>3</option>
-							<option>4</option>
-						</select>
-					</div>
+					<input id="datepicker"  class="message__filter-yaue" type="text" name="date" placeholder="Период">
+					<!-- <div class="message__filter-yauer"> -->
+						<!-- <select name="select"> -->
+							<!-- <option selected="selected"> -->
+								<!-- Январь -->
+							<!-- </option> -->
+							<!-- <option>1</option> -->
+							<!-- <option>2</option> -->
+							<!-- <option>3</option> -->
+							<!-- <option>4</option> -->
+						<!-- </select> -->
+					<!-- </div> -->
 				</div>
 				<div class="message__filter-item">
 					<div class="message__filter-mess">
@@ -276,6 +278,8 @@
 		</div>
 	</footer>
 	<script  src="jquery/jquery-3.0.0.min.js"></script>
+	<script  src="jquery/jquery-ui.min.js"></script>
+	<script  src="js/datepicker-ru.js"></script>
 	<script src="js/main.js"></script>
 </body>
 </html>
