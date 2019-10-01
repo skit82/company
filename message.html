@@ -101,21 +101,25 @@
 			<div class="message__filter">
 				<div class="message__filter-item">
 					<div class="message__filter-yauer">
-						<select name="select">
-							<option selected="selected">
-								Период
-							</option>
-							<option>
-								<input id="datepicker"  class="message__filter-yaue" type="text" name="date" placeholder="Период">
-								<input id="datep"  class="message__filter-yaue" type="text" name="date" placeholder="Период">
-							</option>
-						</select>
+						<div class="message__yauer-wrapper">
+							<a class="message__filter-ref" href="">Период</a>
+							<img class="message__filter-img" src="img/icon_select-stock.png" width="16" height="6" alt="Галочка">
+						</div>
+							<div class="message__box-yauer">
+								<label>
+									<input class="message__filter-yaue" type="date" name="date" placeholder="Период">
+								</label>
+								<label>
+									<input  class="message__filter-yaue" type="date" name="date" placeholder="Период">
+								</label>
+							</div>
 					</div>
 				</div>
 				<div class="message__filter-item">
 					<div class="message__filter-mess">
 						<select class="select-one">
-							<option>
+							<option selected="">
+								Статус обращения
 							</option>
 							<option>на рассмотрении</option>
 							<option>ответ от УК</option>

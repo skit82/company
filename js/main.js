@@ -180,4 +180,12 @@ $(document).ready(function() {
         selectPlaceholder: 'Статус обращения'
       });
     });
+
+    $('.message__filter-img').on('click', function() {
+        $('.message__box-yauer').slideToggle(100, function(){
+          if($(this).css('display') === 'none'){
+          $(this).removeAttr('style')
+          };
+      });
+    })
 });
