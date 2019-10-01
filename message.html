@@ -4,6 +4,8 @@
 <meta charset="UTF-8">
 <link rel="stylesheet" href="css/style.css">
 <link rel="stylesheet" href="css/jquery-ui.css">
+<link rel="stylesheet" href="css/jquery.formstyler.css">
+<link rel="stylesheet" href="css/jquery.formstyler.theme.css">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Две столицы</title>
 </head>
@@ -98,24 +100,22 @@
 			</p>
 			<div class="message__filter">
 				<div class="message__filter-item">
-					<input id="datepicker"  class="message__filter-yaue" type="text" name="date" placeholder="Период">
-					<!-- <div class="message__filter-yauer"> -->
-						<!-- <select name="select"> -->
-							<!-- <option selected="selected"> -->
-								<!-- Январь -->
-							<!-- </option> -->
-							<!-- <option>1</option> -->
-							<!-- <option>2</option> -->
-							<!-- <option>3</option> -->
-							<!-- <option>4</option> -->
-						<!-- </select> -->
-					<!-- </div> -->
+					<div class="message__filter-yauer">
+						<select name="select">
+							<option selected="selected">
+								Период
+							</option>
+							<option>
+								<input id="datepicker"  class="message__filter-yaue" type="text" name="date" placeholder="Период">
+								<input id="datep"  class="message__filter-yaue" type="text" name="date" placeholder="Период">
+							</option>
+						</select>
+					</div>
 				</div>
 				<div class="message__filter-item">
 					<div class="message__filter-mess">
-						<select name="select">
-							<option selected="selected">
-								Статус обращения
+						<select class="select-one">
+							<option>
 							</option>
 							<option>на рассмотрении</option>
 							<option>ответ от УК</option>
@@ -157,7 +157,10 @@
 								</a>
 							</div>
 							<div class="message__status">
-								На рассмотрении      
+								<div class="message__picture">
+									<img src="img/icon-notify1.png" width="20" height="20" alt="" class="message__status-foto">
+								</div>
+								<p class="message__status-text">На рассмотрении</p>     
 							</div>
 						</div>
 						<div class="message__block-two">
@@ -177,7 +180,12 @@
 								</a>
 							</div>
 							<div class="message__status">
-								Ответ от УК     
+								<div class="message__picture">
+									<img src="img/icon-notify2.png" width="20" height="20" alt="" class="message__status-foto">
+								</div>
+								<p class="message__status-text">
+									Ответ от УК
+								</p>     
 							</div>
 						</div>
 						<div class="message__block-two">
@@ -197,7 +205,12 @@
 								</a>
 							</div>
 							<div class="message__status">
-								Рассмотренно      
+								<div class="message__picture">
+									<img src="img/icon-notify3.png" width="20" height="20" alt="" class="message__status-foto">
+								</div>
+								<p class="message__status-text">
+									Рассмотренно
+								</p>      
 							</div>
 						</div>
 						<div class="message__block-two">
@@ -278,6 +291,7 @@
 		</div>
 	</footer>
 	<script  src="jquery/jquery-3.0.0.min.js"></script>
+	<script  src="jquery/jquery.formstyler.min.js"></script>
 	<script  src="jquery/jquery-ui.min.js"></script>
 	<script  src="js/datepicker-ru.js"></script>
 	<script src="js/main.js"></script>

@@ -165,4 +165,19 @@ $(document).ready(function() {
       buttonText: "Период"
       });
     });
+
+    $(function(){
+      $("#datep").datepicker({
+      showOn: "button",
+      buttonImage: "https://snipp.ru/demo/437/calendar.gif",
+      buttonImageOnly: true,
+      buttonText: "Период"
+      });
+    });
+
+    $(function() {
+      $('.select-one').styler({
+        selectPlaceholder: 'Статус обращения'
+      });
+    });
 });
