@@ -157,22 +157,19 @@ $(document).ready(function() {
       }
     })
 
-    $(function(){
-      $("#datepicker").datepicker({
-      showOn: "button",
-      buttonImage: "https://snipp.ru/demo/437/calendar.gif",
-      buttonImageOnly: true,
-      buttonText: "Период"
-      });
-    });
+    // $(function(){
+      // $(".datepick").datepicker({
+      // showOn: "button",
+      // buttonImage: "https://snipp.ru/demo/437/calendar.gif",
+      // buttonImageOnly: true,
+      // buttonText: "Период"
+      // });
+    // });
 
-    $(function(){
-      $("#datep").datepicker({
-      showOn: "button",
-      buttonImage: "https://snipp.ru/demo/437/calendar.gif",
-      buttonImageOnly: true,
-      buttonText: "Период"
-      });
+    $('.datepick').each(function(){
+
+      $(this).datepicker();
+
     });
 
     $(function() {

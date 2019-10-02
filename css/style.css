@@ -4730,9 +4730,23 @@ input:checked ~ .cabinet-form__icon::after {
     cursor: pointer;
   }
   .message__box-yauer {
+    width: 160px;
     position: absolute;
     left: 0px;
+    border-bottom: 1px solid rgba(28, 28, 28, 0.1);
+    border-right: 1px solid rgba(28, 28, 28, 0.1);
+    border-left: 1px solid rgba(28, 28, 28, 0.1);
     background-color: #fff;
+  }
+  .datepick {
+    position: relative;
+    display: block;
+    border: 1px solid rgba(28, 28, 28, 0.1);
+    margin-bottom: 5px;
+    width: 108px;
+  }
+  .datapick-img {
+    position: absolute;
   }
   /*.message__filter-yauer select {*/
     /*position: relative;*/
@@ -4817,7 +4831,7 @@ input:checked ~ .cabinet-form__icon::after {
     height: 65px;
     font-size: 16px;
     font-weight: 400;
-    color: #fff;
+    color: rgba(28, 27, 26, 1);
     line-height: 62px;
     text-align: center;
     background-color: rgb(246, 90, 68);
