@@ -4617,6 +4617,7 @@ input:checked ~ .cabinet-form__icon::after {
   }
   .message__filter-item {
     margin-bottom: 0px;
+    border-left: 1px solid rgba(28, 28, 28, 0.1);
   }
   .message__box--odd {
     background-color: rgb(248, 251, 255);
@@ -4743,10 +4744,34 @@ input:checked ~ .cabinet-form__icon::after {
     display: block;
     border: 1px solid rgba(28, 28, 28, 0.1);
     margin-bottom: 5px;
+    margin-top: 5px;
+    margin-right: 3px;
+    padding: 5px;
     width: 108px;
+    height: 25px;
   }
   .datapick-img {
     position: absolute;
+  }
+  .datapick__name {
+    display: block;
+  }
+  .datapick__name {
+    margin-right: auto;
+    padding-left: 15px;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 300;
+    color: #1c1a1b;
+  }
+  .datapick__label {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
   }
   /*.message__filter-yauer select {*/
     /*position: relative;*/
