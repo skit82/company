@@ -4617,6 +4617,8 @@ input:checked ~ .cabinet-form__icon::after {
   }
   .message__filter-item {
     margin-bottom: 0px;
+  }
+  .message__filter-item--desr {
     border-left: 1px solid rgba(28, 28, 28, 0.1);
   }
   .message__box--odd {
